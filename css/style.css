@@ -7,5 +7,33 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: grey;
+    background-color: rgb(207, 209, 202);
+}
+header{
+        background: linear-gradient(to right, #ff7043, #ffab91);
+        height: 70px;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 45px;
+    color: rgb(61, 53, 61);
+}
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+    display: inline;
+    margin-right: 25px;
+    font-size: 20px;
 }
