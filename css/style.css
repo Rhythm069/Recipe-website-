@@ -38,6 +38,7 @@ nav ul li{
     font-size: 20px;
 }
 .hero {
+    position: relative;
     width: 100%;
     height: 600px;
     background-image: url(../img/hero.png);
@@ -45,10 +46,21 @@ nav ul li{
     background-position: center;
     color: black;
     text-align: center;
+    padding: 140px 0;
+    
 
 }
-.hero-section{
-    font-size: 25px;
+.hero h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    
+}
+.hero p{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(223, 101, 101);
+    margin-bottom: 20px;
+
 }
 .Search-box{
     max-width: 550px;
@@ -57,10 +69,122 @@ nav ul li{
     align-items: center;
     justify-content: center;
 }
- .Search-box input{
-    width: 70%;
-    padding: 10px;
+.search-box input{
+    width: 65%;
+    padding: 20px;
     outline: none;
     border: 0;
     border-radius: 5px 0 0 5px;
  }
+.search-box button {
+    
+     padding: 20px;
+     outline: none;
+     border: 0;
+     border-radius: 5px 5px 5px 5px;
+     cursor: pointer;
+     color: black;
+ }
+ .search-box button:hover {
+     background-color: #ff7043;
+     color: white;
+ }
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+   
+}
+.hero-section {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+
+.btn.primary {
+    background: #ff7043;
+    color: white;
+}
+.btn:hover {
+    background: #ff7043;
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(255, 112, 67, 0.7);
+    
+}
+.recipes {
+    padding: 60px 5%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.recipes h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Card Layout */
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Recipe Card */
+.recipe-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image */
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Text */
+.recipe-card h3 {
+    font-size: 22px;
+    margin: 15px 0 5px;
+}
+
+.recipe-card p {
+    font-size: 15px;
+    padding: 0 15px;
+    color: #666;
+}
+
+/* Button */
+.recipe-card .btn {
+    margin: 15px 0 20px;
+    display: inline-block;
+}
