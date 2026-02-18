@@ -143,14 +143,14 @@ nav ul li{
     color: #333;
 }
 
-/* Card Layout */
+    
 .recipe-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
-/* Recipe Card */
+
 .recipe-card {
     background: white;
     border-radius: 15px;
@@ -164,14 +164,14 @@ nav ul li{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Image */
+
 .recipe-card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
-/* Text */
+
 .recipe-card h3 {
     font-size: 22px;
     margin: 15px 0 5px;
@@ -183,7 +183,7 @@ nav ul li{
     color: #666;
 }
 
-/* Button */
+
 .recipe-card .btn {
     margin: 15px 0 20px;
     display: inline-block;
