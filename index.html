@@ -25,23 +25,28 @@
     <div class="hero">
         <div class="hero-section">
             <h1>Welcome to my Recipe Collection</h1>
-            <p>Search mouth watering recipes to satisfy your craving. </p>
-            <form action="#" class="search-box">
-                <input type="text" placeholder="Search Recipes">
+            <p>Search mouth watering recipes to satisfy your craving.</p>
+
+            <form class="search-box" onsubmit="event.preventDefault(); searchRecipes();">
+                <input type="text" id="searchInput" placeholder="Search Recipes">
                 <button type="submit">Search</button>
             </form>
+
+
+
             <div class="hero-buttons">
                 <a href="#" class="btn primary">Explore Recipes</a>
 
             </div>
         </div>
     </div>
+
     <section class="recipes">
         <h2>Featured Recipes</h2>
 
         <div class="recipe-container">
 
-            <div class="recipe-card">
+            <div class="recipe-card"data-name="pizza">
                 <img src="img/cheese pizza.jpg" alt="Cheese Pizza">
                 <h3>Cheese Pizza</h3>
                 <p>Delicious cheesy pizza with crispy base.</p>
@@ -50,7 +55,7 @@
                 <a href="recipes/pizza.html" class="btn primary">View Recipe</a>
             </div>
 
-            <div class="recipe-card">
+            <div class="recipe-card" data-name="burger">
                 <img src="img/chicken burger.jpg" alt="Chicken Burger">
                 <h3>Chicken Burger</h3>
                 <p>Juicy chicken burger with fresh veggies.</p>
@@ -59,7 +64,7 @@
                 <a href="recipes/burger.html" class="btn primary">View Recipe</a>
             </div>
 
-            <div class="recipe-card">
+            <div class="recipe-card" data-name="pasta">
                 <img src="img/WhiteSaucePasta.jpg" alt="White Sauce Pasta">
                 <h3>White Sauce Pasta</h3>
                 <p>Creamy pasta with rich white sauce.</p>
@@ -68,7 +73,7 @@
                 <a href="recipes/pasta.html" class="btn primary">View Recipe</a>
             </div>
 
-            <div class="recipe-card">
+            <div class="recipe-card" data-name="pancakes">
                 <img src="img/Pancake.jpg" alt="Pancakes">
                 <h3>Pancakes</h3>
                 <p>Soft pancakes with honey and fruits.</p>
@@ -77,7 +82,7 @@
                 <a href="recipes/pankcake.htm" class="btn primary">View Recipe</a>
             </div>
 
-            <div class="recipe-card">
+            <div class="recipe-card" data-name="icecream">
                 <img src="img/icecream.jpg" alt="Icecream">
                 <h3>Icecream</h3>
                 <p>Creamy homemade ice cream with rich vanilla flavor.</p>
@@ -87,7 +92,7 @@
                 <a href="recipes/icecream.html" class="btn primary">View Recipe</a>
             </div>
 
-            <div class="recipe-card">
+            <div class="recipe-card" data-name="donuts">
                 <img src="img/doughnuts.jpg" alt="Donuts">
                 <h3>Donuts</h3>
                 <p>Soft and fluffy donuts coated with chocolate glaze.</p>
@@ -97,7 +102,7 @@
                 <a href="recipes/donuts.html" class="btn primary">View Recipe</a>
             </div>
 
-            <div class="recipe-card">
+            <div class="recipe-card" data-name="lemonade">
                 <img src="img/lemonade.jpg" alt="Lemonade">
                 <h3>Lemonade</h3>
                 <p>Fresh and refreshing lemonade with natural lemon taste.</p>
@@ -107,7 +112,7 @@
                 <a href="recipes/lemonade.html" class="btn primary">View Recipe</a>
             </div>
 
-            <div class="recipe-card">
+            <div class="recipe-card" data-name="cold coffee">
                 <img src="img/cold.jpg" alt="Cold coffee">
                 <h3>Cold Coffee</h3>
                 <p>Chilled coffee blended with milk and ice cubes.</p>
@@ -119,6 +124,9 @@
 
 
         </div>
+    </section>
+
+
     </section>
 
 
