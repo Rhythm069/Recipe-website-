@@ -15,8 +15,8 @@
             <nav>
                 <ul class="nav-bar">
                     <li><a href="#recipesSection">Home</a></li>
-                    <li><a href="">Aboutus</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#aboutSection">About us</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -137,9 +137,45 @@
 
     </section>
 
+    <section class="about" id="aboutSection">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <strong>QuickCook</strong>!
+                We share simple, delicious, and easy-to-make recipes
+                that anyone can prepare at home.
+            </p>
 
+            <p>
+                Our mission is to make cooking fun, fast, and stress-free.
+                Whether you're a beginner or a food lover,
+                we have something tasty for you!
+            </p>
+        </div>
+    </section>
 
+    <section class="contact" id="contactSection">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="contact-info"> 📧Email: quickcook@email.com</p> 
+            <p class="contact-info">📞Phone: 98765 43210</p>
+    
+            <form  id="contactForm" class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h3>Thank you!</h3>
+        <p>Your message has been sent successfully.</p>
+    </div>
+</div>
     <script src="script.js"></script>
 
 </body>
