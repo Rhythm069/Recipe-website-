@@ -30,13 +30,26 @@ header{
     font-size: 45px;
     color: rgb(61, 53, 61);
 }
-nav ul li{
+nav ul {
     list-style: none;
-    cursor: pointer;
-    display: inline;
-    margin-right: 25px;
-    font-size: 20px;
+    display: flex;
+    
+    gap: 25px;
+
 }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3d353d;
+    border-bottom: 2px solid #3d353d;
+    padding-bottom: 5px;
+}   
 .hero {
     position: relative;
     width: 100%;
@@ -62,13 +75,7 @@ nav ul li{
     margin-bottom: 20px;
 
 }
-.Search-box{
-    max-width: 550px;
-    margin: 15px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .search-box input{
     width: 65%;
     padding: 20px;
@@ -108,13 +115,29 @@ nav ul li{
 .hero-buttons {
     margin-top: 20px;
 }
+.search-box {
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+}
 
+.search-box input {
+    width: 400px;
+    padding: 20px;
+    outline: none;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    transition: 0.4s ease;
+}
+.search-box.small input {
+    width: 250px;
+}
 .btn {
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 25px;
     margin: 5px;
-    display: inline-block;
     transition: all 0.3s ease;
     font-weight: bold;
 }

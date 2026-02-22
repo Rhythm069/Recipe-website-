@@ -5,7 +5,11 @@ function searchRecipes() {
 
     cards.forEach(card => {
         let name = card.dataset.name.toLowerCase();
-
         card.style.display = name.includes(input) ? "block" : "none";
+    });
+
+
+    document.getElementById("recipesSection").scrollIntoView({
+        behavior: "smooth"
     });
 }

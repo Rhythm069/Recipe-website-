@@ -14,10 +14,9 @@
             <h1 class="logo">QuickCook</h1>
             <nav>
                 <ul class="nav-bar">
-                    <li>Home</li>
-                    <li>Recipes</li>
-                    <li>Contact</li>
-                    <li>About us</li>
+                    <li><a href="#recipesSection">Home</a></li>
+                    <li><a href="">Aboutus</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,15 +40,24 @@
         </div>
     </div>
 
-    <section class="recipes">
+    <section class="recipes" id="recipesSection">
         <h2>Featured Recipes</h2>
 
         <div class="recipe-container">
 
-            <div class="recipe-card"data-name="pizza">
+            <div class="recipe-card" data-name="pizza">
                 <img src="img/cheese pizza.jpg" alt="Cheese Pizza">
                 <h3>Cheese Pizza</h3>
                 <p>Delicious cheesy pizza with crispy base.</p>
+                <p class="rating">⭐⭐⭐⭐☆</p>
+
+                <a href="recipes/pizza.html" class="btn primary">View Recipe</a>
+            </div>
+
+            <div class="recipe-card" data-name="chicken pizza">
+                <img src="img/chicken pizza.jpg" alt="Chicken Pizza">
+                <h3>Chicken Pizza</h3>
+                <p>Delicious chicken pizza with crispy base.</p>
                 <p class="rating">⭐⭐⭐⭐☆</p>
 
                 <a href="recipes/pizza.html" class="btn primary">View Recipe</a>
