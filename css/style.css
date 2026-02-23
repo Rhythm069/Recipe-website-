@@ -347,3 +347,113 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
+
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .hero {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+   
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box input {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .search-box button {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+   
+    .recipe-container {
+        grid-template-columns: 1fr;
+    }
+
+   
+    .about h2,
+    .contact h2 {
+        margin-right: 0;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 26px;
+    }
+
+    .recipe-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box input {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .hero p {
+        font-size: 45px;
+    }
+}
